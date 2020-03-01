@@ -1,10 +1,15 @@
 import random
+print('這是一個猜數字的遊戲')
+start = input('請輸入最小值：')
+end = input('請輸入最大值：')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 
 while True:
-	number = input('請輸入數字：')
+	number = input('遊戲開始，請輸入數字：')
 	number = int(number)
 	count = count + 1
 
